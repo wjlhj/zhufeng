@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.min.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!-- header
+    设计稿的大小 
+     i5 320*568 dpr：2.0 大小640*1136
+     i6 375*667 dpr：2.0 大小750&1334 （最常用）
+     i6p 414*736 dpr：3.0 大小1242&2208-->
+    <header>
+        <h1 class="logo"><a href=""></a></h1>
+        <div class="menu">
+            <span class="line1"></span>
+            <span class="line2"></span>
+            <span class="line3"></span>
+        </div>
+    </header>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="images/banner图1.png" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner图2.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner图3.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="images/banner图4.jpg" alt=""></div>
+        </div>
+        <!-- 如果需要分页器 -->
+        <div class="swiper-pagination"></div>
+
+        <!-- 如果需要导航按钮 -->
+        <!-- <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div> -->
+
+        <!-- 如果需要滚动条 -->
+        <!-- <div class="swiper-scrollbar"></div> -->
+    </div>
+    <div class="course">
+        <img src="images/img4.png" alt=""><span>全部课程</span> 
+    </div>
+    <!-- main -->
+    <main class="content">
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner图1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner图1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner图1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner图1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner图1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+        <section class="item">
+            <div class="pic">
+                <img src="images/banner图1.png" alt="">
+            </div>
+            <div class="txt">
+                <p class="dec">Vue.js从理论精讲到项目实战课程</p>
+                <p class="pirce">￥5000.00元</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-left">
+            <img src="images/img1.png" alt="">
+            <p>海贼王</p>
+        </div>
+        <div class="footer-center">
+            <img src="images/img2.png" alt="">
+            <p>海贼王</p>
+        </div>
+        <div class="footer-rjght">
+            <img src="images/img3.png" alt="">
+            <p>海贼王</p>
+        </div>
+    </footer>
+    <script src="js/swiper.min.js"></script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+            loop: true, // 循环模式选项
+            // effect: "coverflow",
+            // autoplay:true,//等同于以下设置
+            autoplay: {
+                // 时间
+                delay: 2000,
+                // 
+                stopOnLastSlide: false,
+                //   用户操作之后自动轮播重新开启   true暂停   false开启
+                disableOnInteraction: false,
+            },
+            // 如果需要分页器
+            pagination: {
+                el: '.swiper-pagination',
+            },
+
+            // 如果需要前进后退按钮
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            // 如果需要滚动条
+            scrollbar: {
+                el: '.swiper-scrollbar',
+            },
+        })        
+    </script>
+    <script>
+        // 动态判断rem的大小   desw设计稿的大小
+        // 一套设计稿 适应所有手机机型 单位rem 移动端适配专用的一个单位
+        function refreshRem() {
+            var desW = 640,
+                winW = document.documentElement.clientWidth,
+                ratio = winW / desW;
+            document.documentElement.style.fontSize = ratio * 100 + 'px';
+        }
+        refreshRem();
+        window.addEventListener('resize', refreshRem);
+
+    </script>
+</body>
+
+</html>

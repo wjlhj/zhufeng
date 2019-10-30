@@ -1,0 +1,148 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+html {
+    font-size: 100px;
+}
+
+header {
+    width: 100%;
+    height: 1.12rem;
+    background: #2A2A2A;
+    overflow: hidden;
+}
+
+.logo {
+    float: left;
+    width: 2.1rem;
+    height: 0.62rem;
+    background: url(../images/Layer-15.png) no-repeat;
+    background-size: contain;
+    margin: 0.25rem 0 0 0.16rem;
+}
+
+.menu {
+    float: right;
+    margin: 0.4rem 0.23rem 0 0;
+}
+
+.menu span {
+    width: 0.36rem;
+    height: 0.07rem;
+    background: #ffffff;
+    display: block;
+    margin: 0.03rem 0;
+    border-radius: 0.03rem;
+}
+
+/* .menu span:nth-child(2){
+    margin: 0.06rem 0;
+} */
+
+/* swiper */
+
+.swiper-slide img {
+    width: 100%;
+}
+
+.swiper-pagination-bullet {
+    background: #ffffff;
+}
+
+/* content */
+
+.content {
+    padding: 0 0.2rem;
+    margin-top: 0.2rem;
+}
+
+.item img {
+    width: 100%;
+    border-radius: 0.05rem 0.05rem 0 0;
+}
+
+.item {
+    border-radius: 0.05rem;
+    box-shadow: 0 0.05rem 0.06rem 0 rgba(178, 178, 178, 0.75);
+    margin-bottom: 0.36rem;
+}
+
+.txt {
+    padding: 0.34rem;
+}
+
+.txt p {
+    font-size: 0.28rem;
+    font-weight: 400;
+    line-height: 0.24rem;
+    text-align: center;
+}
+
+.txt .dec {
+    color: #777777;
+}
+
+.txt .pirce {
+    color: #ED3A3A;
+    margin-top: 0.22rem;
+}
+
+footer {
+    width: 100%;
+    height: 1.07rem;
+    background: #000000;
+    /* line-height: 1.07rem; */
+}
+
+.footer-left {
+    text-align: center;
+    width: 33.33%;
+    float: left;
+    /* line-height: 1.07rem; */
+    margin-top: 0.3rem;
+}
+
+.footer-center {
+    text-align: center;
+    width: 33.33%;
+    float: left;
+    /* line-height: 1.07rem; */
+    margin-top: 0.3rem;
+}
+
+.footer-rjght {
+    text-align: center;
+    width: 33.33%;
+    float: left;
+    /* line-height: 1.07rem; */
+    margin-top: 0.3rem;
+}
+
+footer p {
+    color: #ffffff;
+    font-size: 0.16rem;
+}
+
+footer img {
+    width: 0.36rem;
+    height: 0.36rem;
+}
+
+.course {
+    padding: 0 0.2rem;
+    font-size: 0.26rem;
+    margin-top: 0.2rem;
+}
+
+.course img {
+    width: 0.29rem;
+    height: 0.35rem;
+    position: relative;
+}
+
+.course span {
+    position: absolute;
+    left: 0.8rem;
+}
